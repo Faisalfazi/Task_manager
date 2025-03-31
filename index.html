@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div class="all">
+        <div class="hidden">
+            <div class="box">
+                <div class="nav">
+                <h1 style="text-align: center;color: rgb(68, 226, 147);">Task</h1>
+                <div class="b1">
+                <button onclick="cancel()"><h1>X</h1></button>
+                </div>
+                </div>
+                <div class="r1">
+                <label>Task Name:</label>
+                <input type="text" placeholder="Enter the Task Name" id="name" />
+                </div>
+                <div class="r2">
+                    <label>Description :</label>
+                <textarea placeholder="Enter the description about the task" id="desc" ></textarea>
+                </div>
+                <div class="r3">
+                    <label>Due Date :</label>
+                <input type="datetime-local" id="dt" />
+                </div>
+                <div class="btn">
+                    <button onclick="add()">Add</button>
+                    <button onclick="cancel()">Cancel</button>
+                </div>
+            </div>
+            <div class="show">
+                <div class="nav">
+                    <h1 style="text-align: center;color: rgb(68, 226, 147);">Task</h1>
+                    <div class="b1">
+                    <button onclick="cancel()"><h1>X</h1></button>
+                    </div>
+                    </div>
+                    <div class="r1">
+                    <label>Task Name:</label>
+                    <input type="text" placeholder="Enter the Task Name" id="name" />
+                    </div>
+                    <div class="r2">
+                        <label>Description :</label>
+                    <textarea placeholder="Enter the description about the task" id="desc" ></textarea>
+                    </div>
+                    <div class="r3">
+                        <label>Status:</label>
+                        <div class="div1">
+                        <input type="radio" name="rd" value="Completed"/>
+                        <label>Completed:</label>
+                        </div>
+                        <div class="div2">
+                        <input type="radio" name="rd" value="Pending" checked/>
+                        <label>Pending:</label>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button onclick="update()">Save</button>
+                        <button onclick="cancel()">Cancel</button>
+                    </div>                
+            </div>
+        </div>
+    <div class="main">
+        <div class="head">
+            <h1>Task App</h1>
+        </div>
+        <div class="cont">
+            <div class="ct">
+                <div class="title">Title</div>
+                <div class="date">Date & Time</div>
+                <div class="status">Status</div>
+            </div>
+        </div>
+        <div class="foot">
+            <button onclick="box()"><h1>+</h1></button>
+        </div> 
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

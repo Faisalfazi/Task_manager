@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.all
+{
+    height: 100vh;
+}
+.hidden
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.nav
+{
+    display: flex;
+    width: 100%;
+}
+.nav h1
+{
+    width: 55%;
+    display: flex;
+    justify-content: right;
+}
+.nav .b1
+{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.nav .b1 button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nav .b1 h1{
+    height: auto;
+    width: auto;
+    color: rgb(68, 226, 147);
+}
+.box
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(71, 70, 70);
+    height: 60%;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    visibility:hidden;
+}
+.show
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(71, 70, 70);
+    height: 50%;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.box .r1,.show .r1
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.box .r1 label,.show .r1 label
+{
+    color:rgb(68, 226, 147) ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box .r1 input,.show .r1 input{
+    margin-left: 15px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+}
+::placeholder
+{
+    padding-left: 10px;
+}
+.box .r2,.show .r2
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.box .r2 label,.show .r2 label
+{
+    color:rgb(68, 226, 147) ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box .r2 textarea,.show .r2 textarea
+{
+    margin-left: 15px;
+    height: 100px;
+    border: 0;
+    border-radius: 5px;
+}
+.box .r3
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.show .r3
+{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.show .r3 div{
+    display: flex;
+    align-items: center;
+}
+.show .r3 div label
+{
+    margin-left: 5px;
+    color: white;
+}
+.show .r3 div input[type='radio']
+{
+    accent-color: rgb(68, 226, 147);
+}
+.box .r3 label,.show .r3 label
+{
+    color:rgb(68, 226, 147) ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box .r3 input,.show .r3 input{
+    margin-left: 15px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+}
+.box .btn ,.show .btn
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.box .btn button,.show .btn button
+{
+    height: 35px;
+    width: 80px;
+    background-color:rgb(68, 226, 147) ;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.main
+{
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.head
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    color: rgb(68, 226, 147);
+    font-size: 20px;
+}
+.cont{
+    height: 75%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont::-webkit-scrollbar
+{
+    background-color: transparent;
+    width: 5px;
+}
+.cont::-webkit-scrollbar-thumb
+{
+    background: rgb(68, 226, 147);
+}
+.foot
+{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.foot button{
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 2%;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(68, 226, 147);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont .cd
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background-color:rgb(27, 25, 25);
+    margin-top: 10px;
+    min-height: 60px;
+    border: 0;
+    border-radius: 10px;
+}
+.cont .ct{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(54, 52, 52);
+    color: rgb(68, 226, 147);
+}
+.cont .ct .title
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.cont .ct .date
+{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.cont .ct .status
+{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.cont .cd .db
+{
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    
+}
+.cont .cd .db .d1{
+    width: 50%;
+    /* height: max-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    hyphens: manual;
+    overflow-wrap: anywhere;
+}
+.cont .cd .db .d2{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont .cd .db .d3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont .cd .bt1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* margin-left: 1%; */
+    position: absolute;
+    width: max-content;
+    right: 10%;
+    justify-content: right;
+}
+.cont .cd .bt1 button{
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    background-color:rgb(68, 226, 147) ;
+    border: 0;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
